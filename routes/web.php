@@ -14,7 +14,7 @@ use Illuminate\Support\Facades\Route;
 |
  */
 
-Route::get('bonus', [BonusController::class, 'index'])->name('bonus.index');
+Route::get('/', [BonusController::class, 'index'])->name('bonus.index');
 Route::get('bonus/create', [BonusController::class, 'create'])->name('bonus.create');
 Route::post('bonus', [BonusController::class, 'store'])->name('bonus.store');
 Route::get('bonus/{id}/edit', [BonusController::class, 'edit'])->name('bonus.edit');
